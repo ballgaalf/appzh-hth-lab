@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>德州扑克游戏 · 产品说明</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #f2f3f6;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      color: #2b2d33;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .page-wrap {
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    /* 主卡片容器 */
+    .intro-card {
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.02);
+      border: 1px solid #e7e9ef;
+      padding: 2rem 2.2rem;
+      margin-bottom: 1.8rem;
+      transition: box-shadow 0.2s ease;
+    }
+    .intro-card:hover {
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06), 0 2px 4px rgba(0,0,0,0.02);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: #1f2128;
+      margin-bottom: 0.4rem;
+      line-height: 1.3;
+    }
+    .subhead {
+      font-size: 1.05rem;
+      color: #5b5f6b;
+      border-left: 4px solid #c8ccd6;
+      padding-left: 1rem;
+      margin: 0.5rem 0 1.2rem 0;
+    }
+
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin: 1.6rem 0 0.8rem 0;
+      color: #1f2128;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .section-title:first-of-type {
+      margin-top: 0.4rem;
+    }
+
+    p {
+      margin-bottom: 0.9rem;
+      color: #353841;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin: 1.2rem 0;
+    }
+    .feature-item {
+      background: #f7f9fc;
+      border-radius: 16px;
+      padding: 0.9rem 1.2rem;
+      border: 1px solid #eaeef2;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.01);
+    }
+    .feature-item strong {
+      display: block;
+      font-weight: 500;
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+      color: #1f2128;
+    }
+    .feature-item span {
+      font-size: 0.95rem;
+      color: #4f535e;
+    }
+
+    .scenario-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin: 1rem 0 0.6rem 0;
+    }
+    .scenario-tag {
+      background: #ffffff;
+      border: 1px solid #d6dae3;
+      border-radius: 40px;
+      padding: 0.25rem 1rem;
+      font-size: 0.9rem;
+      color: #2b2d33;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.02);
+    }
+
+    .faq-item {
+      margin: 0.9rem 0;
+    }
+    .faq-q {
+      font-weight: 500;
+      margin-bottom: 0.2rem;
+      color: #1f2128;
+    }
+    .faq-a {
+      color: #4b4f5a;
+      padding-left: 0.4rem;
+      border-left: 2px solid #d9dde6;
+      padding-left: 0.8rem;
+      font-size: 0.95rem;
+    }
+
+    .notice-box {
+      background: #f4f6fb;
+      border-radius: 16px;
+      padding: 1rem 1.4rem;
+      border: 1px solid #dde1eb;
+      margin: 1.2rem 0 0.4rem 0;
+    }
+    .notice-box p {
+      margin-bottom: 0.3rem;
+      font-size: 0.95rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e5e8ef;
+      margin: 1.4rem 0;
+    }
+
+    a {
+      color: #2d4f7c;
+      text-decoration: none;
+      border-bottom: 1px solid #b7c6da;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    a:hover {
+      color: #1b3a5e;
+      border-bottom-color: #2d4f7c;
+    }
+
+    @media (max-width: 640px) {
+      .intro-card { padding: 1.4rem; }
+      h1 { font-size: 1.8rem; }
+      .feature-grid { grid-template-columns: 1fr; }
+      .subhead { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <div class="intro-card">
+    <h1>德州扑克游戏 · 产品说明</h1>
+    <div class="subhead">围绕策略、推理与决策的经典牌类体验</div>
+
+    <p>德州扑克不止是一种牌戏，更是一个基于信息、概率与心理判断的思维游戏。本说明页旨在客观介绍 <a href="https://depukegame.com">德州扑克游戏</a> 的核心特点、常见使用场景以及一些基础认知，供新参与者或希望系统了解规则的人参考。</p>
+
+    <!-- 摘要式亮点 -->
+    <div class="section-title">▎ 核心亮点</div>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <strong>公共牌 + 底牌组合</strong>
+        <span>每位参与者获得两张底牌，与五张公共牌组合，形成最佳牌型。每轮行动包含翻牌、转牌、河牌，节奏清晰。</span>
+      </div>
+      <div class="feature-item">
+        <strong>行动轮次与决策树</strong>
+        <span>包含过牌、下注、加注、弃牌、全下等动作。决策受底池赔率、位置、对手倾向影响，有较高复杂度。</span>
+      </div>
+      <div class="feature-item">
+        <strong>不完整信息博弈</strong>
+        <span>参与者无法看到对手底牌，须通过下注模式、下注量、时间节奏等推断可能范围，类似不完全信息博弈。</span>
+      </div>
+      <div class="feature-item">
+        <strong>位置带来的策略优势</strong>
+        <span>庄位（Button）在每个行动轮次中最后行动，可观察多数对手动作后再决策，具有信息与控池优势。</span>
+      </div>
+    </div>
+
+    <!-- 使用建议与场景 -->
+    <div class="section-title">▎ 常见使用场景</div>
+    <p>德州扑克游戏的应用场景比较多样，以下是一些相对成熟的参与方式：</p>
+    <div class="scenario-wrap">
+      <span class="scenario-tag">线上平台练习</span>
+      <span class="scenario-tag">朋友之间友谊局</span>
+      <span class="scenario-tag">策略学习与复盘</span>
+      <span class="scenario-tag">纯娱乐休闲</span>
+      <span class="scenario-tag">锦标赛节奏体验</span>
+    </div>
+    <p>不论采用哪种形式，都建议先熟悉基础牌型大小、位置轮换规则以及下注结构。新手可以先从小额或虚拟筹码开始，逐步理解底池控制与范围分析。</p>
+
+    <!-- 可信但克制的说明 -->
+    <div class="section-title">▎ 一些值得留意的认知</div>
+    <p>德州扑克存在一定的运气成分，短时间内单局结果受发牌影响较大，但长期来看，技术、纪律和情绪管理会显著影响盈利与胜率。不应当将德州扑克视为快速获利的手段，也不应把它当成纯粹的赌博。</p>
+
+    <div class="notice-box">
+      <p><strong>练习建议：</strong> 刚开始接触时，可以限定参与的底池大小，专注于位置、底池赔率和对手倾向的观察。很多平台提供免费练习桌，适合验证基本策略。</p>
+      <p><strong>心态提醒：</strong> 连续失利时容易情绪偏离基准策略，建议设定休息节点或止损限额。保持记录和复盘习惯有助于长期提升。</p>
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <div class="section-title">▎ 常见疑问摘要</div>
+    <div class="faq-item">
+      <div class="faq-q">问：德州扑克高手和普通玩家最大的区别是什么？</div>
+      <div class="faq-a">通常体现在范围感知、下注线设计、翻前翻后策略的匹配度，以及面对压力时是否还能遵循长期正期望的决策。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">问：需要记很多概率吗？</div>
+      <div class="faq-a">基本的翻牌后听牌概率（如同花听牌约 36%，两头顺听牌约 32%）有帮助，但更重要的是理解隐含赔率与弃牌频率之间的关系。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">问：线上平台和线下有什么核心差异？</div>
+      <div class="faq-a">线上缺少面对面的肢体语言，但多了下注时间、下注按钮节奏等信息；线下则包含表情、动作等物理线索，两种形式各有策略侧重。</div>
+    </div>
+
+    <hr>
+
+    <!-- 再次自然嵌入链接，并且保持克制语调 -->
+    <p>如果你对完整的规则细节、不同平台差异或策略演变感兴趣，可以进一步了解 <a href="https://depukegame.com">德州扑克游戏</a> 的相关内容。本页仅作为基础介绍，不构成任何投资或参与建议，决策前请依据自身判断。</p>
+
+    <p style="font-size: 0.9rem; color: #6f7483; margin-top: 0.8rem;">—— 产品说明 · 内容仅供信息参考 ——</p>
+  </div>
+
+</div>
+</body>
+</html>
